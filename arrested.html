@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #ff4d4d;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            animation: move-left-to-right 5s infinite alternate;
+        }
+
+        @keyframes move-left-to-right {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        .animate-shake {
+            animation: shake 1s infinite alternate;
+        }
+
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(10px); }
+        }
+
+        .centered-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5rem;
+        }
+
+        /* Flickering Spotlight Effect */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, transparent 10%, rgba(255, 255, 255, 0.1) 30%, transparent 50%);
+            animation: flicker 2s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 1; }
+            100% { opacity: 0.8; }
+        }
+
+        /* Broken Chain Animation */
+        .broken-chain::before {
+            content: "🔗";
+            display: block;
+            font-size: 2rem;
+            animation: break-chain 2s infinite alternate;
+        }
+
+        @keyframes break-chain {
+            0% { transform: rotate(0); }
+            100% { transform: rotate(10deg); }
+        }
+
+        /* Typewriter Text */
+        .typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 10s steps(580) infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 205%; }
+        }
+
+        /* Evidence Clues */
+        .evidence-icons {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+        }
+
+        .evidence-icons span {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+    </style>
+    <title>Arrested</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="typewriter">Arrested!</h1>
+        <p>You've been caught in a web of lies. The evidence points to your guilt.</p>
+        <div class="animate-shake broken-chain"></div>
+        <div class="centered-text">Justice prevails.</div>
+        <div class="evidence-icons">
+            <span>🔍</span>
+            <span>🔍</span>
+            <span>🔍</span>
+        </div>
+    </div>
+</body>
+</html>

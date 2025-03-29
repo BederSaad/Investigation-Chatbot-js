@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #66cc66;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        .animate-bounce {
+            animation: bounce 1s infinite alternate;
+        }
+
+        .glowing-halo {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+        .animated-checkmark {
+            animation: rotate-checkmark 1s infinite alternate;
+        }
+
+        .floating-feather {
+            animation: float-feather 3s infinite alternate;
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+
+        @keyframes rotate-checkmark {
+            0% { transform: rotate(0); }
+            100% { transform: rotate(45deg); }
+        }
+
+        @keyframes float-feather {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+
+        .centered-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5rem;
+        }
+    </style>
+    <title>Cleared</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glowing-halo">Cleared!</h1>
+        <p>You've been truthful, and the evidence supports your innocence.</p>
+        <div class="animate-bounce">👍</div>
+        <div class="centered-text">Truth prevails.</div>
+        <div class="animated-checkmark">✅</div>
+        <div class="floating-feather">🕊️</div>
+    </div>
+</body>
+</html>
