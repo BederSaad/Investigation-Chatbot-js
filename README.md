@@ -68,4 +68,4 @@ To use this project locally or deploy it, you'll need:
 
 
 ## Live Demo
-[Live Demo](#https://bedersaad.github.io/Investigation-Chatbot-js/)
+[Live Demo](https://bedersaad.github.io/Investigation-Chatbot-js/)
